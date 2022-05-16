@@ -23,7 +23,7 @@ function Nav(props) {
                             }`}
                         key={category.name}
                     >
-                        <a className='nav-link'
+                        <a className='nav-link' href={`${currentCategory.path}`}
                             onClick={() => {
                                 setCurrentCategory(category);
                                 setContactSelected(false);
